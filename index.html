@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.ico">
+
+    <title>Movie Mapper</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
+<!--     <link href="css/carousel.css" rel="stylesheet"> -->
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- <script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-sanitize.min.js"></script>
+  </head>
+
+  <body>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-5QR87J"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5QR87J');</script>
+<!-- End Google Tag Manager -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-66886611-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script src="js/menu.js"></script>
+
+<div ng-app="myMovies" ng-controller="moviesCtrl">
+<div class="container">
+
+	<div class="well">
+	<div class="row">
+   		<img class="img-responsive" src="images/logoKS.png" />
+   	</div>
+   	</div>
+
+
+<div class="row"></div>
+
+	<div class="panel panel-info">
+	  <div class="panel-heading">
+	    <h3 class="panel-title">
+	    Visualise your favourite movies
+	    </h3>
+	  </div>
+	  <div class="panel-body">
+		<div class="embed-responsive embed-responsive-16by9">
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+        <li data-target="#myCarousel" data-slide-to="6"></li>
+        <li data-target="#myCarousel" data-slide-to="7"></li>
+        <li data-target="#myCarousel" data-slide-to="8"></li>
+        <li data-target="#myCarousel" data-slide-to="9"></li>
+        <li data-target="#myCarousel" data-slide-to="10"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="images/carousel/Frame.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption carousel_text">
+              <div class="carousel_text">What makes your favourite movie?</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/carousel/characters2.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <div class="carousel_text">the characters?</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/carousel/locations2.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <div class="carousel_text">the locations?</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/carousel/scenes2.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <div class="carousel_text">the scenes?</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/carousel/soundtrack.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <div class="carousel_text">the soundtrack?</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/carousel/Frame.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <div class="carousel_text">all of the above!</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/carousel/births.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <div class="carousel_text">see the characters enter the movie</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/carousel/deaths.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <div class="carousel_text">see when they leave</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/carousel/closeup.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <div class="carousel_text">see their interactions</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/carousel/frames.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <div class="carousel_text">the frames, compressed</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="images/carousel/sounds.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <div class="carousel_text">the soundtrack overlayed</div>
+            </div>
+          </div>
+        </div>
+
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    </div><!-- /.carousel -->
+		</div>
+	  </div>
+	</div>
+
+<div class="row"></div>
+
+	<div class="panel panel-info">
+	  <div class="panel-heading">
+	    <h3 class="panel-title">
+	    View our Kickstarter campaign video below
+	    </h3>
+	  </div>
+	  <div class="panel-body">
+		<div class="embed-responsive embed-responsive-16by9">
+		  <iframe src="http://www.youtube.com/embed/4L1zPcDpbUg"></iframe>
+		</div>
+	  </div>
+	</div>
+
+	<!-- 4:3 aspect ratio -->
+
+<div class="row"></div>
+
+<div class="panel">
+	<div class="panel panel-info">
+		<div class="panel-heading"><h3 class="panel-title">Gallery of movie maps - from just £40.00</h3></div>
+		<div ng-repeat="x in movies">
+			<div class="panel-body col-lg-6">
+				<div class="well">
+					<div><a href="movie.html?movie={{$index}}"><img class="img-responsive" src="movies/{{x.name}}/Frame3{{x.name}}_SMALL.jpg"/></a></div>
+					<div align="center"><h3>{{x.title}}</h3></div>
+				</div>
+			</div>
+		</div>
+		<div class="panel-body col-lg-6">
+			<div class="well">
+				<div><a href="contact.html?"><img class="img-responsive" src="movies/OWN/Frame3OWN_SMALL.jpg"/></a></div>
+				<div align="center"><h3>Create your own movie map!</h3></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row"><br /></div>
+
+<div class="panel">
+	<div class="panel panel-info">
+		<div class="panel-heading"><h3 class="panel-title">Gallery of colour palettes with soundtrack - from just £20.00</h3></div>
+			<div ng-repeat="y in palettes">
+				<div class="panel-body col-lg-6">
+					<div class="well">
+						<div><a href="palette.html?movie={{$index}}"><img class="img-responsive" src="movies/{{y.name}}/Frame3-A4-{{y.name}}_SMALL.jpg"/></a></div>
+						<div align="center"><h3>{{y.title}}</h3></div>
+					</div>
+				</div>
+			</div>
+		<div class="panel-body col-lg-6">
+			<div class="well">
+				<div><a href="contact.html?"><img class="img-responsive" src="movies/OWN/Frame3-A4-OWN_SMALL.jpg"/></a></div>
+				<div align="center"><h3>Create your own colour palette print!</h3></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div> <!-- /container -->
+<div ng-bind-html="myFooter"></div>
+</div>
+
+<script src="js/moviesController.js"></script>
+<script src="js/simpleCart.js"></script>
+<script src="js/manipulateCart.js"></script>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

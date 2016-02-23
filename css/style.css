@@ -1,0 +1,235 @@
+/* Defaults
+------------------------------------------------------------ */
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+	min-height: 2000px;
+    padding-top: 70px;
+	background-color:#fff;
+	font-size:16px;
+	color:#333;
+}
+div.carousel_text {
+	text-align: center;
+	font-size:32px;
+	font-weight:bold;
+	color:#FFFFFF;
+}
+h1 {
+	text-align: center;
+	font-size:20px;
+	font-weight:bold;
+	color:#333;
+}
+h2 {
+	text-align: center;
+	font-size:18px;
+	font-weight:bold;
+	color:#333;
+}
+h3 {
+	font-size:16px;
+	font-weight:bold;
+}
+h4 {
+	font-size:14px;
+	font-weight:bold;
+}
+img.img-src {
+	font-size:14px;
+	font-weight:bold;
+	color:#666;
+	text-align: left;
+	height : 50px;
+}
+td.data {
+	font-size:14px;
+	font-weight:bold;
+	color:#666;
+	text-align: left;
+}
+
+td.item-name {
+	color:#666;
+}
+td.item-thumb {
+	color:#666;
+	height : 60px;
+}
+td.item-price {
+	color:#666;
+	max-width: 100px;
+}
+td.item-size {
+	color:#666;
+	width : 50px;
+}
+td.item-empty {
+	color:#666;
+	width : 5px;
+}
+td.item-quantity {
+	color:#666;
+	width : 50px;
+}
+td.item-shipping {
+	color:#666;
+	max-width: 100px;
+}
+td.item-decrement {
+	color:#666;
+	width : 10px;
+}
+td.item-remove {
+	color:#666;
+	width : 10px;
+}
+td.item-increment {
+	color:#666;
+	width : 10px;
+}
+
+span.iconCartClass {
+	font-size:12px;
+}
+span.iconCartClassLarge {
+	font-size:24px;
+}
+.fader {
+    /* Giving equal sizes to each element */
+    width:    50px;
+    height:   50px;
+
+    /* Positioning elements in lines */
+    display:  inline-block;
+
+    /* This is necessary for position:absolute to work as desired */
+    position: relative;
+
+    /* Preventing zoomed images to grow outside their elements */
+    overflow: hidden; }
+
+
+    .fader img {
+        /* Stretching the images to fill whole elements */
+        width:       100%;
+        height:      100%;
+
+        /* Preventing blank space below the image */
+        line-height: 0;
+
+        /* A one-second transition was to disturbing for me */
+        -webkit-transition: all 0.3s ease;
+        -moz-transition:    all 0.3s ease;
+        -o-transition:      all 0.3s ease;
+        -ms-transition:     all 0.3s ease;
+        transition:         all 0.3s ease; }
+
+        .fader img:hover {
+            /* Making images appear bigger and transparent on mouseover */
+            opacity: 0.5;
+            width:   120%;
+            height:  120%; }
+
+    .fader .text {
+        /* Placing text behind images */
+        z-index: -10;     
+
+        /* Positioning text top-left conrner in the middle of elements */
+        position: absolute;
+        top:      50%;
+        left:     50%; }
+
+        .fader .text p {
+            /* Positioning text contents 50% left and top relative
+               to text container's top left corner */
+            margin-top:  -50%; 
+            margin-left: -50%; }
+            
+
+            
+img.cart {
+	width: 25px;
+	height: 25px;
+}
+td.movieTitleHeader {
+	text-align: center;
+	font-size:20px;
+	font-weight:bold;
+	color:#333;
+}
+td.movieTitle{
+	text-align: center;
+	font-size:16px;
+	font-weight:bold;
+	color:#333;
+}
+table.menus{
+	width : 100%;
+	border-collapse: collapse;
+}
+td.menus{
+	background-color: #EEEEEE;
+	padding : 5px;
+}
+td.menus:hover { 
+    background-color: #AAAAAA;
+    transition: all 0.5s ease; 
+}
+
+li.menusCart{
+	background-color: #960000;
+	padding : 5px;
+}
+li.menusCart:hover { 
+    background-color: #d04d4d;
+    transition: all 0.5s ease; 
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color : #333;
+}
+div.frameImage { 
+    border: 1px solid white;
+}
+
+div.frameImage:hover { 
+    border: 1px solid #333333;
+    transition: all 2s ease; 
+}
+input.item_Quantity{
+	font-size:14px;
+	border: 1px solid #CCCCCC;
+    padding: 3px;
+}
+select.item_size {
+	font-size:14px;
+	border: 1px solid #CCCCCC;
+    padding: 3px;
+}
+select.item_Shipping {
+	font-size:14px;
+	border: 1px solid #CCCCCC;
+    padding: 3px;
+}
+input.item_Discount{
+	font-size:14px;
+	border: 1px solid #CCCCCC;
+    padding: 3px;
+}
+div.alertClassHidden {
+	height : 0px;
+	visibility:hidden;
+}
+div.alertClassVisible {
+	height : 0px;
+	visibility:visible;
+}
