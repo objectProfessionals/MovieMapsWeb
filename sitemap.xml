@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+	<url><loc>http://www.movie-maps.net</loc>
+		<image:image><image:loc>http://movie-maps.net/movies/ANH/Frame3ANH_SMALL.jpg</image:loc><image:title>Star Wars IV : A New Hope, movie data visualisation</image:title></image:image>
+		<image:image><image:loc>http://movie-maps.net/movies/ESB/Frame3ESB_SMALL.jpg</image:loc><image:title>Star Wars V : The Empire Strikes Back, movie data visualisation</image:title></image:image>
+		<image:image><image:loc>http://movie-maps.net/movies/ROTJ/Frame3ROTJ_SMALL.jpg</image:loc><image:title>Star Wars VI : Return of the Jedi, movie data visualisation</image:title></image:image>
+		<image:image><image:loc>http://movie-maps.net/movies/DKR/Frame3DKR_SMALL.jpg</image:loc><image:title>Star Wars VI : Return of the Jedi, movie data visualisation</image:title></image:image>
+		<image:image><image:loc>http://movie-maps.net/movies/BR/Frame3BR_SMALL.jpg</image:loc><image:title>Star Wars VI : Return of the Jedi, movie data visualisation</image:title></image:image>
+		<image:image><image:loc>http://movie-maps.net/movies/DUN/Frame3DUN_SMALL.jpg</image:loc><image:title>Star Wars VI : Return of the Jedi, movie data visualisation</image:title></image:image>
+		<image:image><image:loc>http://movie-maps.net/movies/FCL/Frame3FCL_SMALL.jpg</image:loc><image:title>Star Wars VI : Return of the Jedi, movie data visualisation</image:title></image:image>
+		<image:image><image:loc>http://movie-maps.net/movies/FOTR/Frame3FOTR_SMALL.jpg</image:loc><image:title>Star Wars VI : Return of the Jedi, movie data visualisation</image:title></image:image>
+		<image:image><image:loc>http://movie-maps.net/movies/GDF/Frame3GDF_SMALL.jpg</image:loc><image:title>Star Wars VI : Return of the Jedi, movie data visualisation</image:title></image:image>
+		<image:image><image:loc>http://movie-maps.net/movies/INC/Frame3INC_SMALL.jpg</image:loc><image:title>Star Wars VI : Return of the Jedi, movie data visualisation</image:title></image:image>
+		<image:image><image:loc>http://movie-maps.net/movies/INCP/Frame3INCP_SMALL.jpg</image:loc><image:title>Star Wars VI : Return of the Jedi, movie data visualisation</image:title></image:image>
+		<image:image><image:loc>http://movie-maps.net/movies/JAW/Frame3JAW_SMALL.jpg</image:loc><image:title>Star Wars VI : Return of the Jedi, movie data visualisation</image:title></image:image>
+		<image:image><image:loc>http://movie-maps.net/movies/MAT/Frame3MAT_SMALL.jpg</image:loc><image:title>Star Wars VI : Return of the Jedi, movie data visualisation</image:title></image:image>
+		<image:image><image:loc>http://movie-maps.net/movies/POA/Frame3POA_SMALL.jpg</image:loc><image:title>Star Wars VI : Return of the Jedi, movie data visualisation</image:title></image:image>
+		<image:image><image:loc>http://movie-maps.net/movies/PUL/Frame3PUL_SMALL.jpg</image:loc><image:title>Star Wars VI : Return of the Jedi, movie data visualisation</image:title></image:image>
+		<image:image><image:loc>http://movie-maps.net/movies/RLA/Frame3RLA_SMALL.jpg</image:loc><image:title>Star Wars VI : Return of the Jedi, movie data visualisation</image:title></image:image>
+		<image:image><image:loc>http://movie-maps.net/movies/T2/Frame3T2_SMALL.jpg</image:loc><image:title>Star Wars VI : Return of the Jedi, movie data visualisation</image:title></image:image>
+		<image:image><image:loc>http://movie-maps.net/movies/WALL/Frame3-A4-WALL_SMALL.jpg</image:loc><image:title>Star Wars VI : Return of the Jedi, movie data visualisation</image:title></image:image>
+		<video:video>
+			<video:content_loc>https://youtu.be/4L1zPcDpbUg</video:content_loc>
+			<video:player_loc allow_embed="yes" autoplay="ap=1">https://youtu.be/4L1zPcDpbUg</video:player_loc>
+			<video:thumbnail_loc>http://www.example.com/thumbs/123.jpg</video:thumbnail_loc>
+			<video:title>Kickstarter campaign video for movie maps</video:title>
+			<video:description>Data visualistion for your favourite movies</video:description>
+		</video:video>
+	</url>
+	<url><loc>http://movie-maps.net/index.html</loc></url>
+	<url><loc>http://movie-maps.net/about.html</loc></url>
+	<url><loc>http://movie-maps.net/cart.html</loc></url>
+	<url><loc>http://movie-maps.net/contact.html</loc></url>
+	<url><loc>http://movie-maps.net/movie.html</loc></url>
+	<url><loc>http://movie-maps.net/movies.html</loc></url>
+	<url><loc>http://movie-maps.net/palette.html</loc></url>
+	<url><loc>http://movie-maps.net/palettes.html</loc></url>
+</urlset>
