@@ -63,6 +63,8 @@ simpleCart({
 <script src="js/manipulateCart.js"></script>
 <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 
+<script src="js/angular.min.js"></script>
+<script src="js/angular-sanitize.min.js"></script>
   </head>
 
   <body>
@@ -128,8 +130,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
 </div>
 </div>
+<div ng-app="myMovies" ng-bind-html="myFooter" ng-controller="footerCtrl"></div>
 
-<script src="js/footer.js"></script>
+<script src="app/components/movies/moviesController.js"></script>
+<script src="app/shared/footer/footerController.js"></script>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->

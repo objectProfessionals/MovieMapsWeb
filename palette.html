@@ -125,11 +125,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <div class="row"></div>
 
-<div id="myCartAlert" role="alert" class="alertClassHidden" >Your item has been added to the cart</div>
+<div id="myCartAlert" role="alert" class="alertClassHidden" >Your item has been added to the <a href="javascript: window.location.href='cart.html'"><b>cart</b></a></div>
 
 <div class="panel panel-default">
 <div class="panel simpleCart_shelfItem">
-		<span id="itemName" class="item_name" style="visibility:hidden">{{palettes[loc].name}}</span>
+		<span id="itemName" class="item_name" style="visibility:hidden">{{palettes[loc].title}}</span>
 		<img id="item_thumb" src="movies/{{palettes[loc].name}}/Frame3-A4-{{palettes[loc].name}}_SMALL.jpg" alt="Sample Product" class="item_thumb" thumb="" width="0" height="0">
 		<table class="table"><tr><td>
 		<div class="col-xs-3" style="text-align:right">Qty:</div>
@@ -177,15 +177,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 
 </div> <!-- /container -->
+<div ng-bind-html="myFooter" ng-controller="footerCtrl"></div>
 </div>
 
-<script src="js/footer.js"></script>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="js/bootstrap.min.js"></script>
-<script src="js/moviesController.js"></script>
+<script src="app/components/movies/moviesController.js"></script>
+<script src="app/shared/footer/footerController.js"></script>
+
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="js/ie10-viewport-bug-workaround.js"></script>
 </body>

@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Allow:https://youtu.be/4L1zPcDpbUg
