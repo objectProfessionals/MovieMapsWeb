@@ -43,4 +43,6 @@ myMoviesApp.controller('moviesCtrl', ['$scope', function($scope) {
         
     ];
     $scope.loc = location.search.substring(location.search.indexOf("=")+1);
+    $scope.menuPath = location.pathname;
+    $scope.cartQty = window.simpleCart.quantity();
 }]);

@@ -1,0 +1,26 @@
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="{{menuPath.indexOf('index.html') > 0 ? 'active' : ''}}"><a href="index.html">Home</a></li>
+        <li class="{{menuPath.indexOf('movie') > 0 ? 'active' : ''}}"><a href="movies.html">Movie Maps</a></li>
+        <li class="{{menuPath.indexOf('palette') > 0 ? 'active' : ''}}"><a href="palettes.html">Colour Palettes</a></li>
+		<li class="{{menuPath.indexOf('cart.html') > 0 ? 'active' : ''}}" id="cartMenu"><a href="cart.html">Cart</a></li>
+        <li class="{{menuPath.indexOf('about.html') > 0 ? 'active' : ''}}"><a href="about.html">About</a></li>
+        <li class="{{menuPath.indexOf('contact.html') > 0 ? 'active' : ''}}"><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="cart.html"><span id="cartIcon" class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+    </div>
+</nav>

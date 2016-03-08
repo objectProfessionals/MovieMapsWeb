@@ -18,7 +18,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/jumbotron-narrow.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
@@ -36,8 +36,13 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-	<script src="js/angular.min.js"></script>
+	<script src="js/angular.js"></script>
 	<script src="js/angular-sanitize.min.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.elevatezoom.js"></script>
+	<script src="js/simpleCart.js"></script>
+	<script src="js/manipulateCart.js"></script>
+	<script src="js/discountCodes.js"></script>
   </head>
 
   <body>
@@ -61,9 +66,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   ga('send', 'pageview');
 
 </script>
-<script src="js/menu.js"></script>
 
 <div ng-app="myMovies" ng-controller="moviesCtrl">
+<div ng-include="'menu.html'"></div>
     <div class="container">
 
 	<div class="well">
@@ -101,8 +106,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="js/ie10-viewport-bug-workaround.js"></script>

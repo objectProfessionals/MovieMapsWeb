@@ -39,6 +39,9 @@
 
 	<script src="js/angular.min.js"></script>
 	<script src="js/angular-sanitize.min.js"></script>
+	<script src="js/simpleCart.js"></script>
+	<script src="js/manipulateCart.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
   </head>
 
   <body>
@@ -62,9 +65,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   ga('send', 'pageview');
 
 </script>
-<script src="js/menu.js"></script>
 
 <div ng-app="myMovies" ng-controller="moviesCtrl">
+<div ng-include="'menu.html'"></div>
 <div class="container">
 
 	<div class="well">
@@ -283,8 +286,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <script src="app/components/movies/moviesController.js"></script>
 <script src="app/shared/footer/footerController.js"></script>
-<script src="js/simpleCart.js"></script>
-<script src="js/manipulateCart.js"></script>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->

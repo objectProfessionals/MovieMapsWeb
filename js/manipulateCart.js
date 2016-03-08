@@ -29,12 +29,16 @@ function updateCartAlert() {
 function updateCartClass() {
 	var cartMenu = document.getElementById('cartMenu');
 	var cartIcon = document.getElementById('cartIcon');
-	if(simpleCart.quantity() == 0)
-	{
+	if (cartMenu) {
+		if(simpleCart.quantity() > 0) {
+			cartMenu.className='active2';
+		}
+	}
+	if (cartIcon) {
 		cartIcon.style.visibility='hidden';
-	} else {
-		cartMenu.className='active2';
-		cartIcon.style.visibility='';
+		if(simpleCart.quantity() > 0) {
+			cartIcon.style.visibility='';
+		}
 	}
 }
 
