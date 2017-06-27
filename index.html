@@ -9,7 +9,7 @@
     <link rel="icon" href="images/favicon.ico">
 
     <title>Movie Mapper</title>
-	<meta name="Author" content="Sanjay Parekh, contact@readMyArt.com" />
+	<meta name="Author" content="Sanjay Parekh, objectProfessionals@gmail.com" />
 	<meta name="keywords" content="movies, films, data visualisation, data visualization, graph, art, lines, frames, soudtrack, characters, scenes, locations" />
 	<meta name="description" content="Choose suggest your favourite film, visualise character movements across scenes locations, with soundtrack compressed frames" />
 	<meta name="robots" content="all, index, follow"></meta>
@@ -240,8 +240,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <div class="panel">
 	<div class="panel panel-info">
+		<div class="panel-heading"><h3 class="panel-title">Scanography - from just £30.00</h3></div>
+		<div ng-repeat="x in scanography|limitTo:6">
+			<div class="panel-body col-lg-6">
+				<div class="well">
+					<div><a href="scanography.html?movie={{$index}}"><img class="img-responsive" src="movies/{{x.name}}/{{x.name}}_{{x.hidden}}_MOCK0_SMALL.jpg"/></a></div>
+					<div align="center"><h3>{{x.title}}</h3></div>
+				</div>
+			</div>
+		</div>
+		<div class="panel-body col-lg-6">
+			<div class="well">
+				<div><a href="contact.html?"><img class="img-responsive" src="movies/OWN/OWN_MOCK0_SMALL.jpg"/></a></div>
+				<div align="center"><h3>Create your own movie map!</h3></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row"></div>
+
+<div class="panel">
+	<div class="panel panel-info">
 		<div class="panel-heading"><h3 class="panel-title">Gallery of movie maps - from just £40.00</h3></div>
-		<div ng-repeat="x in movies">
+		<div ng-repeat="x in movies|limitTo:6">
 			<div class="panel-body col-lg-6">
 				<div class="well">
 					<div><a href="movie.html?movie={{$index}}"><img class="img-responsive" src="movies/{{x.name}}/Frame3{{x.name}}_SMALL.jpg"/></a></div>
@@ -263,7 +285,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="panel">
 	<div class="panel panel-info">
 		<div class="panel-heading"><h3 class="panel-title">Gallery of colour palettes with soundtrack - from just £20.00</h3></div>
-			<div ng-repeat="y in palettes">
+			<div ng-repeat="y in palettes|limitTo:6">
 				<div class="panel-body col-lg-6">
 					<div class="well">
 						<div><a href="palette.html?movie={{$index}}"><img class="img-responsive" src="movies/{{y.name}}/Frame3-A4-{{y.name}}_SMALL.jpg"/></a></div>

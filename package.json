@@ -1,0 +1,15 @@
+{
+  "name": "movie-mapper-eclipse",
+  "version": "1.0.0",
+  "description": "npm for movie-mapper-eclipse",
+  "main": "git/index.html",
+  "dependencies": {
+    "angular": "^1.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sanjay Parekh",
+  "license": "ISC"
+}

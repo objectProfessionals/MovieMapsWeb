@@ -42,6 +42,12 @@ myMoviesApp.controller('moviesCtrl', ['$scope', function($scope) {
 	{name: 'WALL', title: 'WALL-E', desc: 'Delightful cnd colourful classic', desc2:'Will warm the coldest of hearts', desc3:'', link: 'http://www.imdb.com/title/tt0076759/', small:'10', large: '20', extraLarge: '50'}
         
     ];
+
+    $scope.scanography = [
+                 	{name:'ANH', hidden: 'STR', title: 'A New Hope - Stormtrooper', desc: 'Star Wars Episode IV - A New Hope', desc2: 'George Lucas\'s 1977 classic', desc3:'See R2 and C3PO join Luke, Han, Leia, ObiWan against Vader', link: 'http://www.imdb.com/title/tt0076759/', large:'30', extraLarge:'60'},
+                 	{name:'ANH', hidden: 'VADER', title: 'A New Hope - Darth Vader', desc: 'Star Wars Episode IV - A New Hope', desc2: 'George Lucas\'s 1977 classic', desc3:'See R2 and C3PO join Luke, Han, Leia, ObiWan against Vader', link: 'http://www.imdb.com/title/tt0076759/', large:'30', extraLarge:'60'}
+	];
+    
     $scope.loc = location.search.substring(location.search.indexOf("=")+1);
     $scope.menuPath = location.pathname;
     $scope.cartQty = window.simpleCart.quantity();
