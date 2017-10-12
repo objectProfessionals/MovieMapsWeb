@@ -64,6 +64,11 @@ myMoviesApp.controller('moviesCtrl', ['$scope', function($scope) {
 	{name:'TFA', hidden: 'BB8', title: 'The Force Awakens - BB8', desc: 'Star Wars Episode VII - The Force Awakens', desc2:'Thirty years after the defeat of the Galactic Empire, the galaxy faces a new threat from the evil Kylo Ren (Adam Driver) and the First Order.', desc3:'When a defector named Finn (John Boyega) crash-lands on a desert planet, he meets Rey (Daisy Ridley). J. J. Abrahams instant classic', link: 'http://www.imdb.com/title/tt0076759/', large:'40',  extraLarge: '60'}
 	];
     
+    $scope.solar = [
+ 	{name:'picM', title: 'Solar System at a Date', desc: 'Solar System planetary positions on a date you choose', desc2: 'Select the style and color', desc3:'Select the size'},
+   	{name:'picS', title: 'Pick your own date', desc: 'Solar System planetary positions on a date you choose', desc2: 'Select the style and color', desc3:'Select the size'}
+    ];
+                       	
     $scope.loc = location.search.substring(location.search.indexOf("=")+1);
     $scope.menuPath = location.pathname;
     $scope.cartQty = window.simpleCart.quantity();
