@@ -74,7 +74,7 @@ simpleCart.bind('beforeAdd', function (item) {
     var lPrice = lp*disc;
     var xlPrice = xp*disc;
     if (item.get('size') == 'S') {
-        item.price(lPrice);
+        item.price(sPrice);
     } else if (item.get('size') == 'L') {
         item.price(lPrice);
     } else if (item.get('size') == 'XL') {
