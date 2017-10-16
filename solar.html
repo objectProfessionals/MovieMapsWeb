@@ -51,8 +51,8 @@ $(document).ready(function () {
 	setupLists();
 });
 
-var sp = 17;
-var lp = 25;
+var sp = 20;
+var lp = 30;
 var xp = 45;
 
 function setupLists() {
@@ -80,7 +80,7 @@ simpleCart.bind('beforeAdd', function (item) {
     } else if (item.get('size') == 'XL') {
         item.price(xlPrice);
     }
-    var totalName = 'MM_'+$('.item_day').val()+'_'+$('.item_month').val()+'_'+$('.item_year').val()+'_'+$('.item_size').val()+'_'+$('.item_name').val() ;
+    var totalName = 'LGA_'+$('.item_day').val()+'_'+$('.item_month').val()+'_'+$('.item_year').val()+'_'+$('.item_size').val()+'_'+$('.item_name').val() ;
     item.set('name', totalName);
 });
 </script>
@@ -218,8 +218,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		        <option value="31">31st</option>
 			</select>
 		</div>
-		<div class="col-xs-1"></div>
-		<div class="col-xs-2">
+		<div class="col-xs-3">
 			<select class="item_month" style="width:100%">
 		        <option value="Jan">Jan</option>
 		        <option value="Feb">Feb</option>
@@ -235,8 +234,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		        <option value="Dec">Dec</option>
 			</select>
 		</div>
-		<div class="col-xs-1"></div>
-		<div class="col-xs-2">
+		<div class="col-xs-3">
 			<select class="item_year" style="width:100%">
 			</select>
 		</div>
@@ -256,9 +254,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<div class="col-xs-3" style="text-align:right">Size:</div>
 		<div class="col-xs-8">
 			<select class="item_size" style="width:100%">
-		        <option value="S">Small (A2) £17</option>
-		        <option value="L">Large (A2) £25</option>
-		        <option value="XL">Extra Large (A0) £45</option>
+		        <option value="S">Small (16 x 12 in, 406 x 304 mm) £20</option>
+		        <option value="L">Large (20 x 16 in, 508 x 406 mm) £30</option>
+		        <option value="XL">Extra Large (40 x 30 in, 1016 x 762 mm) £45</option>
 			</select>
 		</div>
 		<div class="col-xs-3" style="text-align:right">Del:</div>
