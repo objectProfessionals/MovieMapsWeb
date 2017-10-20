@@ -65,8 +65,8 @@ myMoviesApp.controller('moviesCtrl', ['$scope', function($scope) {
 	];
     
     $scope.solar = [
- 	{name:'picM', title: 'Solar System at a Date', desc: 'Solar System planetary positions on a date you choose', desc2: 'Select the style and color', desc3:'Select the size'},
-   	{name:'picS', title: 'Pick your own date', desc: 'Solar System planetary positions on a date you choose', desc2: 'Select the style and color', desc3:'Select the size'}
+ 	{name:'picM', page:'solar.html', title: 'Solar System Poster', desc: 'Solar System planetary positions on a date you choose', desc2: 'Select the style and color', desc3:'Select the size'},
+   	{name:'picMugM', page:'solarMug.html', title: 'Solar System Mug', desc: 'Solar System planetary positions on a date you choose', desc2: 'Select the style and color', desc3:'Select the size'}
     ];
                        	
     $scope.loc = location.search.substring(location.search.indexOf("=")+1);

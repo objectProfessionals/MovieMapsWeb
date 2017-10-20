@@ -51,10 +51,7 @@ $(document).ready(function () {
 	setupLists();
 });
 
-var dp = 15;
-var sp = 20;
-var lp = 30;
-var xp = 45;
+var mp = 18;
 
 function setupLists() {
 	var start = 1900;
@@ -66,27 +63,14 @@ function setupLists() {
 	}
 }
 simpleCart.bind('beforeAdd', function (item) {
-	if (item.get('shipping') == '0.00' && item.get('size') != 'D') {
-		alert('You may only Digital shippping for a digital delivery\nPlease re-select');
-		return false;
-	}
 	var dateChosen = $('.item_day').val()+'/'+$('.item_month').val()+'/'+$('.item_year').val();
 	if (!confirm('Please check and confirm the date chose: \n'+dateChosen)) {
 		return false;
 	}
 	var disc = getDiscounted();
-    var dPrice = dp*disc;
-    var sPrice = sp*disc;
-    var lPrice = lp*disc;
-    var xlPrice = xp*disc;
-    if (item.get('size') == 'S') {
-        item.price(sPrice);
-    } else if (item.get('size') == 'L') {
-        item.price(lPrice);
-    } else if (item.get('size') == 'XL') {
-        item.price(xlPrice);
-    } else if (item.get('size') == 'D') {
-        item.price(dPrice);
+    var mPrice = mp*disc;
+    if (item.get('size') == 'M') {
+        item.price(mPrice);
     }
     var totalName = 'LGA_'+$('.item_day').val()+'_'+$('.item_month').val()+'_'+$('.item_year').val()+'_'+$('.item_size').val()+'_'+$('.item_name').val() ;
     item.set('name', totalName);
@@ -121,13 +105,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 	  var selected = $('.item_name').val();
 	  if (selected == 'M') {
-		  setPicInfo('picM')
+		  setPicInfo('mugM')
 	  } else if (selected == 'S') {
-		  setPicInfo('picS')
+		  setPicInfo('mugS')
 	  } else if (selected == 'D') {
-		  setPicInfo('picD')
+		  setPicInfo('mugD')
 	  } else if (selected == 'W') {
-		  setPicInfo('picW')
+		  setPicInfo('mugW')
 	  }
 
   }
@@ -162,7 +146,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
 <div class="well">
 <div class="row">
-	<img id="zoom" name="pic" src="images/solar/picM.jpg" data-zoom-image="images/solar/picM_L.jpg" data-toggle="modal" data-target="#myModal" width="100%">
+	<img id="zoom" name="pic" src="images/solar/mugM.jpg" data-zoom-image="images/solar/mugM_L.jpg" data-toggle="modal" data-target="#myModal" width="100%">
 </div>
 	<span class="glyphicon glyphicon glyphicon-zoom-in" aria-hidden="true"></span>
 </div>
@@ -171,7 +155,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <div class="modal-dialog">
     <div class="modal-content">
         <div class="modal-body">
-            <img id="popZoom" name="popZoom" src="images/solar/picM.jpg" class="img-responsive" width="100%">
+            <img id="popZoom" name="popZoom" src="images/solar/mugM.jpg" class="img-responsive" width="100%">
         </div>
     </div>
   </div>
@@ -262,10 +246,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<div class="col-xs-3" style="text-align:right">Size:</div>
 		<div class="col-xs-8">
 			<select class="item_size" style="width:100%">
-				<option value="S">Small (16 x 12 in, 406 x 304 mm) £20</option>
-		        <option value="L">Large (20 x 16 in, 508 x 406 mm) £30</option>
-		        <option value="XL">Extra Large (40 x 30 in, 1016 x 762 mm) £45</option>
-				<option value="D">Digital by email (4795 x 3590px) £15</option>
+		        <option value="M">Mug £18</option>
 			</select>
 		</div>
 		<div class="col-xs-3" style="text-align:right">Del:</div>
@@ -274,7 +255,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<option value="3.00">Shipping to UK (£3)</option>
 				<option value="6.00">USA/Canada (£6)</option>
 				<option value="10.00">Other (£10)</option>
-				<option value="0.00">Digital - delivery by email</option>
 			</select>
 		</div>
 		<div class="col-xs-3" style="text-align:right">Discount code:</div>
@@ -297,12 +277,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <a href="#" class="list-group-item">Perfect for birthdays, weddings, anniversaries...</a>
   <a href="#" class="list-group-item">Enter the date</a>
   <a href="#" class="list-group-item">Choose a style</a>
-	<a href="#" class="list-group-item">Choose a size</a>
-	<a href="#" class="list-group-item">Digital delivery is suitable for printing at 300dpi to 16 x 12 in</a>
-  <a href="#" class="list-group-item">Delivery in a secure, padded, heavy-duty, cardboard tube</a>
+  <a href="#" class="list-group-item">Choose a size</a>
+  <a href="#" class="list-group-item">Mug size is approximately 95 x 82 mm</a>
   <a href="contact.html?" class="list-group-item">If the date you want cannot be chosen, please contact us</a>
   <a href="#" class="list-group-item">Pay securely with PayPal&nbsp;<span class="fa fa-cc-paypal"></span></a>
-  <a href="#" class="list-group-item">Frame not included in price</a>
+  <a href="#" class="list-group-item">Delivery in secure padded cardboard box</a>
   <a href="contact.html?" class="list-group-item">Want additional variations? Contact us</a>
 </div>
 
