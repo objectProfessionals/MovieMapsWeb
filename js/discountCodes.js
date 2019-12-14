@@ -1,3 +1,3 @@
 var discounts = {
-		'code1': {code:'KICK20', pc: 20, exp:'July 24, 2017 00:00:00'}
+		'code1': {code:'KICK2020', pc: 20, exp:'January 08, 2020 00:00:00'}
 };
